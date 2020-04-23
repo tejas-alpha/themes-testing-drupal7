@@ -1,0 +1,30 @@
+{
+  "name": "fortytwo",
+  "version": "7.0.0",
+  "description": "Fortytwo theme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  },
+  "author": "Fabian de Rijk <fabian@finalist.com>",
+  "license": "GPL",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-sass-lint": "^1.3.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.7.7",
+    "css-mqpacker": "^5.0.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^3.1.0",
+    "gulp-jscs": "^4.0.0",
+    "gulp-lintspaces": "^0.5.0",
+    "gulp-postcss": "^6.4.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^2.1.2",
+    "gulp-uglifycss": "^1.0.8"
+  }
+}

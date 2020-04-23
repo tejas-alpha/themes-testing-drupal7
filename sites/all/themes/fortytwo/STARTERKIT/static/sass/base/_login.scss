@@ -1,0 +1,151 @@
+html body.ft-layout-login.page-user {
+  $color: #666666;
+
+  color: $color;
+  height: 100vh;
+  min-height: 600px;
+
+  .login-bg,
+  .login-overlay {
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .login-bg {
+    background: url('../images/login/login-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .login-overlay {
+    $overlay-color: #489be0;
+    $rgba: rgba($overlay-color, 0.75);
+    background-color: $rgba;
+  }
+
+  header *,
+  footer,
+  .column.sidebar,
+  .form-required,
+  .breadcrumb {
+    display: none;
+  }
+
+  .wrapper {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+
+    #page-title {
+      display: none;
+    }
+
+    .content.column {
+      float: none;
+      margin: 0 auto;
+      max-width: calc(100% - 40px);
+      padding-bottom: 60px;
+      position: relative;
+      width: 350px;
+
+      .ft-logo {
+        margin-bottom: 50px;
+        text-align: center;
+
+        img {
+          display: inline-block;
+        }
+      }
+
+      .tabs {
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+
+        ul {
+          border: 0;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+
+          li {
+            a {
+              background: transparent;
+              border: 0;
+              color: $white;
+              display: inline;
+              font-size: 12px;
+              margin: 0;
+              padding: 0;
+            }
+
+            &:after {
+              color: $white;
+              content: ' | ';
+            }
+
+            &:last-child:after {
+              content: '';
+            }
+          }
+        }
+      }
+
+      form {
+        background: $white;
+
+        .form-item {
+          margin: 0;
+          padding: 50px 50px 0;
+
+          .form-text {
+            $form-text-border-color: #e5e5e5;
+            border: 0;
+            border-bottom: 1px solid $form-text-border-color;
+            border-radius: 0;
+            font-size: 16px;
+            height: 45px;
+            padding: 8px 6px;
+            vertical-align: middle;
+            width: 100%;
+
+            &:focus {
+              outline: 0;
+            }
+          }
+        }
+
+        .description {
+          font-size: 12px;
+          font-style: italic;
+          margin: 50px 50px 0;
+        }
+
+        .form-actions {
+          padding-top: 50px;
+
+          .form-submit {
+            $login-submit: #489BE0;
+
+            background-color: $login-submit;
+            border: 0;
+            border-radius: 0;
+            color: $white;
+            height: 50px;
+            text-transform: uppercase;
+            transition: background-color 0.4s;
+            width: 100%;
+
+            &:hover {
+              background-color: darken($login-submit, 20%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

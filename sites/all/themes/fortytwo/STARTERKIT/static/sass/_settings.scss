@@ -1,0 +1,127 @@
+$debug-mode: false;
+
+// Basic fonts
+$sans: 'Titillium', Helvetica, Arial;
+$default-font: $sans;
+
+// Basic colors
+$page-background-color: $white;
+$page-font-color: #3B3B3B;
+
+$default-font-size: 16px;
+$default-line-height: 24px;
+
+// Grid settings
+$default-grid-columns: 16;
+$default-grid-column-width: 48;
+$default-grid-gutter-width: 30;
+
+$master-context-width: $default-grid-column-width * $default-grid-columns + $default-grid-gutter-width * ($default-grid-columns - 1);
+
+//  The canvas width with the settings above is 1218px,
+//  if you alter the values, make sure the canvas width
+//  always calculates below 1247px. Otherwise you have to
+//  change the media queries below.
+//
+//  For example the bootstrap grid system value:
+//  $grid-columns: 12
+//  $grid-column-width: 75
+//  $grid-gutter-width: 30
+//
+//  This will calculate in a canvas width of:
+//  (12 * (75 + 30)) - 30 = 1230px
+
+
+// media queries
+$mobile: 'screen and (min-width: 0px) and (max-width: 767px)';
+$xs: 'screen and (min-width: 0px) and (max-width: 479px)';
+$s: 'screen and (min-width: 480px) and (max-width: 767px)';
+
+$tablet: 'screen and (min-width: 768px) and (max-width: 1247px)';
+$m: 'screen and (min-width: 768px) and (max-width: 1001px)';
+$l: 'screen and (min-width: 1002px) and (max-width: 1247px)';
+
+$xl: 'screen and (min-width: 1248px)';
+
+$xs-identifier-color: $sunflower;
+$xs-identifier-text: 'XS - MOBILE PORTRAIT';
+$s-identifier-color: $nepgritis;
+$s-identifier-text: 'S - MOBILE LANDSCAPE';
+$m-identifier-color: $belizehole;
+$m-identifier-text: 'M - TABLET PORTRAIT';
+$l-identifier-color: $amethyst;
+$l-identifier-text: 'L - TABLET LANDSCAPE';
+$xl-identifier-color: $pomegranate;
+$xl-identifier-text: 'XL - DESKTOP';
+
+// PAGE ELEMENTS SETTINGS
+
+// CUSTOM VARIABLES
+$white: #FFFFFF;
+$black: #000000;
+$chathamsblue: #154273;
+$lochmara: #007BC7;
+$linkwater: #D9EBF7;
+$athensgrey: #EAEBEE;
+$porcelain: #F3F5F6;
+$silver: #C7C7C7;
+$tundora: #474747;
+
+$message-warning: #E5A200;
+$message-status: #4D8F46;
+$message-error: #B73939;
+
+// normal, hover, visited
+$bodycopy-link-colors: $lochmara, $chathamsblue, $chathamsblue;
+$checked-color: #007BC7;
+
+$focus-ring-color: #FFA500;
+
+$button-bg-color: #CB4E4E;
+$link-button-bg-color: #0E83CD;
+
+$grid-transparency: 8;
+
+// INPUTS
+$webkit-autofill-color: #EBF5FA;
+$error-red: $message-error;
+
+// TRANSITIONS
+$easing: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$ease-out-quad: $easing;
+$ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+$transition-speed: 0.4s;
+
+
+// Below are variables that have been preset in the base theme,
+// if you need to change them, overrule them here
+// ==========================================================================
+
+// MARK TAG
+// $mark-background-color: yellow
+// $mark-font-color: black
+
+// BORDER RADIUS (used on inputs and buttons)
+// $button-border-radius: 2px
+// $input-border-radius: 2px
+
+// INPUTS
+// $input-focus-border-color: royalblue
+// $input-border-radius: $border-radius
+// $webkit-autofill-color: #f0feff
+
+// BUTTONS
+// $button-border-color:       silver
+// $button-border-hover-color: orangered
+// $button-font-color:         darken( $button-border-hover-color, 10% )
+// $button-border-radius:      $border-radius
+// $button-font-size:          $default-font-size
+// $button-background-color:   whitesmoke
+
+// FIELDSET
+// $fieldset-border-color:     $button-border-color
+
+// RADIO & CHECKBOXES
+// $checked-color:             $input-focus-border-color
+// $check-icon-color:          grey
